@@ -1,43 +1,52 @@
 @import "tailwindcss";
 
 :root {
-  --background: #171717;
-  --foreground: #f1f3f4;
-  --card-bg: #242526;
-  --card-subtle: #2d2e30;
-  --card-border: #3c4043;
-  --text-muted: #9aa0a6;
-  --text-dim: #bdc1c6;
-  --accent-blue: #8ab4f8;
-  --accent-blue-hover: #aecbfa;
-  --pill-bg: #303134;
-  --pill-hover: #3c4043;
+  --background: #fafaf9;
+  --foreground: #0c0a09;
+  --card-bg: #ffffff;
+  --card-subtle: #f5f5f4;
+  --card-border: #e7e5e4;
+  --card-border-subtle: #f0eeee;
+  --text-primary: #0c0a09;
+  --text-secondary: #44403c;
+  --text-muted: #78716c;
+  --accent-primary: #1c1917;
+  --accent-contrast: #ffffff;
+  --accent-subtle: #e7e5e4;
+  --nav-bg: rgba(250, 250, 249, 0.88);
 }
 
-[data-theme="light"] {
-  --background: #f8f9fa;
-  --foreground: #202124;
-  --card-bg: #ffffff;
-  --card-subtle: #f1f3f4;
-  --card-border: #dadce0;
-  --text-muted: #5f6368;
-  --text-dim: #70757a;
-  --accent-blue: #1a73e8;
-  --accent-blue-hover: #174ea6;
-  --pill-bg: #f1f3f4;
-  --pill-hover: #e8eaed;
+[data-theme="dark"] {
+  --background: #09090b;
+  --foreground: #fafafa;
+  --card-bg: #121215;
+  --card-subtle: #18181b;
+  --card-border: #27272a;
+  --card-border-subtle: #1f1f23;
+  --text-primary: #fafafa;
+  --text-secondary: #d4d4d8;
+  --text-muted: #a1a1aa;
+  --accent-primary: #f4f4f5;
+  --accent-contrast: #09090b;
+  --accent-subtle: #27272a;
+  --nav-bg: rgba(9, 9, 11, 0.88);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: var(--background);
   color: var(--foreground);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Google Sans", Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -0.011em;
   transition: background-color 0.25s ease, color 0.25s ease;
 }
 
-/* Custom smooth horizontal scrollbar for mobile strips */
+/* Subtle scrollbars */
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
@@ -46,31 +55,21 @@ body {
   scrollbar-width: none;
 }
 
-.thin-scrollbar::-webkit-scrollbar {
-  height: 6px;
-  width: 6px;
-}
-.thin-scrollbar::-webkit-scrollbar-track {
-  background: transparent;
-}
-.thin-scrollbar::-webkit-scrollbar-thumb {
-  background: var(--card-border);
-  border-radius: 9999px;
-}
-
-/* Glass & elevated cards */
-.google-card {
+/* Executive Card Styling */
+.executive-card {
   background-color: var(--card-bg);
   border: 1px solid var(--card-border);
   border-radius: 16px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.02), 0 1px 2px -1px rgba(0, 0, 0, 0.02);
   transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.google-card:hover {
-  border-color: rgba(138, 180, 248, 0.4);
+.executive-card:hover {
+  border-color: var(--text-muted);
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
 }
 
-[data-theme="light"] .google-card:hover {
-  border-color: rgba(26, 115, 232, 0.4);
-  box-shadow: 0 4px 14px rgba(60, 64, 67, 0.08);
+/* Subtle separator rule */
+.executive-divider {
+  border-color: var(--card-border);
 }

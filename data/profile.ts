@@ -11,18 +11,14 @@ export interface ProfileData {
   relationshipStatus: string;
   languages: string[];
   work: Array<{
-    title: string;
-    role: string;
     organization: string;
+    role: string;
     period: string;
-    duration: string;
     description: string;
     type: "business" | "government";
   }>;
   education: Array<{
     institution: string;
-    degree?: string;
-    shortName: string;
     location?: string;
   }>;
   photos: Array<{
@@ -30,20 +26,17 @@ export interface ProfileData {
     src: string;
     alt: string;
     caption: string;
-    source: string;
   }>;
   socials: {
     instagram: string;
     facebook: string;
     whatsapp: string;
-    email?: string;
+    email: string;
   };
-  overview: string;
-  quickFacts: Array<{
-    label: string;
-    value: string;
-    subvalue?: string;
-  }>;
+  overview: {
+    paragraph1: string;
+    paragraph2: string;
+  };
 }
 
 export const PROFILE_DATA: ProfileData = {
@@ -58,24 +51,20 @@ export const PROFILE_DATA: ProfileData = {
   birthDate: "May 29",
   relationshipStatus: "Single",
   languages: ["Urdu", "British English", "Judeo-Arabic", "Sindhi"],
-  
+
   work: [
     {
-      title: "Hamza Motors - HQ",
       organization: "Hamza Motors - HQ",
-      role: "OWNER & CEO",
-      period: "Jun 3, 2017 – Present",
-      duration: "9+ Years",
+      role: "Owner & CEO",
+      period: "June 3, 2017 – Present",
       description: "Directing strategic vision, luxury automobile acquisitions, dealership operations, and corporate ventures at Hamza Motors Headquarters.",
       type: "business"
     },
     {
-      title: "Former Member of National Assembly",
-      organization: "National Assembly of Pakistan (PML-N)",
-      role: "PMLN - MNA from NA/316",
-      period: "Jul 4, 2023 – Present",
-      duration: "Active Service",
-      description: "Represented constituency NA-316 in the National Assembly, advocating for community infrastructure, youth enterprise, and legislative reform.",
+      organization: "National Assembly of Pakistan",
+      role: "Former Member of National Assembly (PMLN - MNA from NA/316)",
+      period: "July 4, 2023 – Present",
+      description: "Represented constituency NA-316 in the National Assembly of Pakistan under the Pakistan Muslim League (N), participating in legislative proceedings and public service initiatives.",
       type: "government"
     }
   ],
@@ -83,14 +72,10 @@ export const PROFILE_DATA: ProfileData = {
   education: [
     {
       institution: "Aga Khan University",
-      shortName: "AKU",
-      degree: "Alumnus / Higher Education",
       location: "Karachi, Pakistan"
     },
     {
-      institution: "The London School of Economics and Political Science - LSE",
-      shortName: "LSE",
-      degree: "Economics & Political Science Studies",
+      institution: "The London School of Economics and Political Science (LSE)",
       location: "London, United Kingdom"
     }
   ],
@@ -99,30 +84,26 @@ export const PROFILE_DATA: ProfileData = {
     {
       id: "photo-1",
       src: "/images/sheikh-hamza-podium.jpg",
-      alt: "Sheikh Mohammad Hamza Khalifa delivering a speech at the podium",
-      caption: "Keynote address & public assembly discourse",
-      source: "Official Archive"
+      alt: "Sheikh Mohammad Hamza Khalifa delivering a keynote address at the podium",
+      caption: "Keynote address and public discourse"
     },
     {
       id: "photo-2",
       src: "/images/sheikh-hamza-portrait.jpg",
-      alt: "Sheikh Mohammad Hamza Khalifa close-up executive portrait",
-      caption: "Executive Portrait — Owner & CEO, Hamza Motors - HQ",
-      source: "Executive Media"
+      alt: "Sheikh Mohammad Hamza Khalifa executive portrait",
+      caption: "Executive Portrait — Owner & CEO, Hamza Motors - HQ"
     },
     {
       id: "photo-3",
       src: "/images/sheikh-hamza-formal.jpg",
       alt: "Sheikh Mohammad Hamza Khalifa formal traditional portrait",
-      caption: "Official parliamentary & leadership portrait",
-      source: "Parliamentary Record"
+      caption: "Official executive and leadership portrait"
     },
     {
       id: "photo-4",
       src: "/images/sheikh-hamza-assembly.jpg",
       alt: "Sheikh Mohammad Hamza Khalifa seated at official event with dignitary delegation",
-      caption: "High-level council gathering & delegation summit",
-      source: "Press Bureau"
+      caption: "High-level council gathering and delegation summit"
     }
   ],
 
@@ -133,39 +114,8 @@ export const PROFILE_DATA: ProfileData = {
     email: "contact@sheikhmohammadhamzakhalifa.online"
   },
 
-  overview: "Sheikh Mohammad Hamza Khalifa is an influential Pakistani entrepreneur, business executive, and former parliamentarian. He serves as the Owner and Chief Executive Officer of Hamza Motors - HQ, an automotive enterprise he founded and has led since June 2017. A former Member of the National Assembly of Pakistan representing NA-316 with the Pakistan Muslim League (N), he has been actively engaged in civic development, commerce, and public administration. He completed his higher education across premier institutions including Aga Khan University and The London School of Economics and Political Science (LSE).",
-
-  quickFacts: [
-    {
-      label: "Born",
-      value: "May 29",
-      subvalue: "Origin: Jizan"
-    },
-    {
-      label: "Residence",
-      value: "Karachi, Pakistan",
-      subvalue: "Sindh, Pakistan"
-    },
-    {
-      label: "Office / Enterprise",
-      value: "Hamza Motors - HQ",
-      subvalue: "Owner & CEO"
-    },
-    {
-      label: "Parliamentary Seat",
-      value: "MNA (Former)",
-      subvalue: "PMLN · NA-316"
-    },
-    {
-      label: "Education",
-      value: "AKU · LSE",
-      subvalue: "Aga Khan Univ. & London School of Economics"
-    },
-    {
-      label: "Languages",
-      value: "Urdu, British English",
-      subvalue: "Judeo-Arabic, Sindhi"
-    }
-  ]
+  overview: {
+    paragraph1: "Sheikh Mohammad Hamza Khalifa is a Pakistani business executive and former parliamentarian. He serves as Owner and Chief Executive Officer of Hamza Motors - HQ and has a background in business leadership and public service.",
+    paragraph2: "He has also served in the National Assembly of Pakistan, representing NA-316 under the Pakistan Muslim League (N)."
+  }
 };
-

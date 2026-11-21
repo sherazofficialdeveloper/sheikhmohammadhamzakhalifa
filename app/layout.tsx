@@ -16,27 +16,25 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://sheikhmohammadhamzakhalifa.online"),
   title: {
-    default: "Sheikh Mohammad Hamza Khalifa | Official Profile & Knowledge Panel",
+    default: "Sheikh Mohammad Hamza Khalifa | Official Profile",
     template: "%s | Sheikh Mohammad Hamza Khalifa",
   },
   description:
-    "Official profile & biographical card of Sheikh Mohammad Hamza Khalifa — Owner & CEO of Hamza Motors - HQ (since 2017) and Former Member of National Assembly (PMLN - MNA NA/316). Higher education at Aga Khan University & The London School of Economics and Political Science (LSE).",
+    "Official profile of Sheikh Mohammad Hamza Khalifa — Owner & CEO of Hamza Motors - HQ and Former Member of National Assembly (PMLN - MNA NA/316). Higher education at Aga Khan University and The London School of Economics and Political Science (LSE).",
   keywords: [
     "Sheikh Mohammad Hamza Khalifa",
     "Mohammad Hamza Khalifa",
     "Hamza Khalifa",
     "شیخ محمد حمزہ خلیفہ",
-    "Hamza Motors",
     "Hamza Motors - HQ",
     "Hamza Motors Owner & CEO",
-    "Former Member of National Assembly NA 316",
-    "PMLN MNA NA-316",
-    "PMLN MNA Karachi",
-    "National Assembly of Pakistan",
-    "Aga Khan University Alumnus",
-    "London School of Economics LSE",
-    "Karachi Pakistan",
-    "Jizan",
+    "Former Member of National Assembly",
+    "PMLN - MNA from NA/316",
+    "NA-316",
+    "Aga Khan University",
+    "The London School of Economics and Political Science",
+    "LSE",
+    "Karachi, Pakistan",
     "sheikhmohammadhamzakhalifa.online",
   ],
   authors: [{ name: "Sheikh Mohammad Hamza Khalifa", url: "https://sheikhmohammadhamzakhalifa.online" }],
@@ -47,18 +45,18 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "profile",
-    title: "Sheikh Mohammad Hamza Khalifa | Official Profile & Knowledge Panel",
+    title: "Sheikh Mohammad Hamza Khalifa | Official Profile",
     description:
-      "Official profile of Sheikh Mohammad Hamza Khalifa — Owner & CEO of Hamza Motors - HQ, Former MNA NA/316 (PMLN), AKU & LSE alumnus.",
+      "Official profile of Sheikh Mohammad Hamza Khalifa — Owner & CEO of Hamza Motors - HQ and Former Member of National Assembly (PMLN - MNA NA/316).",
     url: "https://sheikhmohammadhamzakhalifa.online",
-    siteName: "Sheikh Mohammad Hamza Khalifa Official",
+    siteName: "Sheikh Mohammad Hamza Khalifa",
     locale: "en_US",
     images: [
       {
         url: "/images/sheikh-hamza-podium.jpg",
         width: 1024,
         height: 1024,
-        alt: "Sheikh Mohammad Hamza Khalifa speaking at public assembly",
+        alt: "Sheikh Mohammad Hamza Khalifa delivering a speech",
       },
       {
         url: "/images/sheikh-hamza-portrait.jpg",
@@ -72,9 +70,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Sheikh Mohammad Hamza Khalifa | Official Profile",
     description:
-      "Owner & CEO at Hamza Motors - HQ | Former Member of National Assembly NA/316 PMLN | AKU & LSE Alumnus",
+      "Owner & CEO at Hamza Motors - HQ | Former Member of National Assembly (PMLN - MNA NA/316)",
     images: ["/images/sheikh-hamza-podium.jpg"],
-    creator: "@sheikhmohammadhamzakhalifa",
   },
   robots: {
     index: true,
@@ -87,12 +84,9 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  verification: {
-    google: "google-site-verification-token",
-  },
 };
 
-// Complete JSON-LD Structured Data for Google Knowledge Graph
+// Accurate Schema.org JSON-LD Person Structured Data
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
@@ -103,11 +97,10 @@ const jsonLd = {
       alternateName: [
         "شیخ محمد حمزہ خلیفہ",
         "Hamza Khalifa",
-        "Sheikh Hamza Khalifa",
         "Mohammad Hamza Khalifa",
       ],
       description:
-        "Pakistani entrepreneur, Owner & CEO of Hamza Motors - HQ, and Former Member of the National Assembly representing PMLN from NA-316.",
+        "Pakistani business executive, Owner and Chief Executive Officer of Hamza Motors - HQ, and former Member of the National Assembly representing PMLN from NA-316.",
       url: "https://sheikhmohammadhamzakhalifa.online",
       image: [
         "https://sheikhmohammadhamzakhalifa.online/images/sheikh-hamza-podium.jpg",
@@ -130,21 +123,19 @@ const jsonLd = {
         {
           "@type": "EducationalOrganization",
           name: "Aga Khan University",
-          url: "https://www.aku.edu",
         },
         {
           "@type": "EducationalOrganization",
-          name: "The London School of Economics and Political Science - LSE",
-          url: "https://www.lse.ac.uk",
+          name: "The London School of Economics and Political Science (LSE)",
         },
       ],
-      birthPlace: {
-        "@type": "Place",
-        name: "Jizan",
-      },
       homeLocation: {
         "@type": "Place",
         name: "Karachi, Pakistan",
+      },
+      birthPlace: {
+        "@type": "Place",
+        name: "Jizan",
       },
       nationality: {
         "@type": "Country",
@@ -161,8 +152,8 @@ const jsonLd = {
       "@type": "WebSite",
       "@id": "https://sheikhmohammadhamzakhalifa.online/#website",
       url: "https://sheikhmohammadhamzakhalifa.online",
-      name: "Sheikh Mohammad Hamza Khalifa Official",
-      description: "Official Profile, Biography & Knowledge Panel for Sheikh Mohammad Hamza Khalifa",
+      name: "Sheikh Mohammad Hamza Khalifa",
+      description: "Official Profile of Sheikh Mohammad Hamza Khalifa",
       publisher: {
         "@id": "https://sheikhmohammadhamzakhalifa.online/#person",
       },
