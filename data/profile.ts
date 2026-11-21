@@ -28,7 +28,6 @@ export interface ProfileData {
     caption: string;
   }>;
   socials: {
-    instagram: string;
     facebook: string;
     whatsapp: string;
     email: string;
@@ -46,9 +45,9 @@ export const PROFILE_DATA: ProfileData = {
   primaryRoleTitle: "Owner & CEO",
   secondaryRole: "Former Member of National Assembly",
   secondaryRoleDetail: "PMLN - MNA from NA/316",
-  location: "Karachi, Pakistan",
+  location: "Islamabad, Pakistan",
   hometown: "Jizan",
-  birthDate: "May 29",
+  birthDate: "May 2001",
   relationshipStatus: "Single",
   languages: ["Urdu", "British English", "Judeo-Arabic", "Sindhi"],
 
@@ -108,14 +107,13 @@ export const PROFILE_DATA: ProfileData = {
   ],
 
   socials: {
-    instagram: "https://instagram.com/sheikhmohammadhamzakhalifa",
-    facebook: "https://facebook.com/sheikhmohammadhamzakhalifa",
-    whatsapp: "https://wa.me/923000000000?text=Hello%20Sheikh%20Mohammad%20Hamza%20Khalifa",
-    email: "contact@sheikhmohammadhamzakhalifa.online"
+    facebook: "https://www.facebook.com/share/1Kp9pTLXgr/",
+    whatsapp: "https://wa.me/923028044408?text=Hello%20Sheikh%20Mohammad%20Hamza%20Khalifa",
+    email: "smhk.official@gmail.com"
   },
 
   overview: {
-    paragraph1: "Sheikh Mohammad Hamza Khalifa is a Pakistani business executive and former parliamentarian. He serves as Owner and Chief Executive Officer of Hamza Motors - HQ and has a background in business leadership and public service.",
+    paragraph1: "Sheikh Mohammad Hamza Khalifa is a Pakistani business executive and former parliamentarian. He is the Owner and Chief Executive Officer of Hamza Motors - HQ, is based in Islamabad, Pakistan, and was born in May 2001.",
     paragraph2: "He has also served in the National Assembly of Pakistan, representing NA-316 under the Pakistan Muslim League (N)."
   }
 };

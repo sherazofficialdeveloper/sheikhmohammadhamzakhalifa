@@ -20,11 +20,14 @@ export const metadata: Metadata = {
     template: "%s | Sheikh Mohammad Hamza Khalifa",
   },
   description:
-    "Official profile of Sheikh Mohammad Hamza Khalifa — Owner & CEO of Hamza Motors - HQ and Former Member of National Assembly (PMLN - MNA NA/316). Higher education at Aga Khan University and The London School of Economics and Political Science (LSE).",
+    "Official profile of Sheikh Mohammad Hamza Khalifa, Owner & CEO of Hamza Motors - HQ and former Member of Pakistan's National Assembly. Based in Islamabad, Pakistan; born May 2001.",
   keywords: [
     "Sheikh Mohammad Hamza Khalifa",
     "Mohammad Hamza Khalifa",
     "Hamza Khalifa",
+    "Sheikh Mohammad Hamza Khalifa date of birth",
+    "Sheikh Mohammad Hamza Khalifa Islamabad",
+    "Sheikh Mohammad Hamza Khalifa born May 2001",
     "شیخ محمد حمزہ خلیفہ",
     "Hamza Motors - HQ",
     "Hamza Motors Owner & CEO",
@@ -34,7 +37,7 @@ export const metadata: Metadata = {
     "Aga Khan University",
     "The London School of Economics and Political Science",
     "LSE",
-    "Karachi, Pakistan",
+    "Islamabad, Pakistan",
     "sheikhmohammadhamzakhalifa.online",
   ],
   authors: [{ name: "Sheikh Mohammad Hamza Khalifa", url: "https://sheikhmohammadhamzakhalifa.online" }],
@@ -47,7 +50,7 @@ export const metadata: Metadata = {
     type: "profile",
     title: "Sheikh Mohammad Hamza Khalifa | Official Profile",
     description:
-      "Official profile of Sheikh Mohammad Hamza Khalifa — Owner & CEO of Hamza Motors - HQ and Former Member of National Assembly (PMLN - MNA NA/316).",
+      "Sheikh Mohammad Hamza Khalifa is the Owner & CEO of Hamza Motors - HQ and a former Member of Pakistan's National Assembly. Based in Islamabad; born May 2001.",
     url: "https://sheikhmohammadhamzakhalifa.online",
     siteName: "Sheikh Mohammad Hamza Khalifa",
     locale: "en_US",
@@ -70,7 +73,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Sheikh Mohammad Hamza Khalifa | Official Profile",
     description:
-      "Owner & CEO at Hamza Motors - HQ | Former Member of National Assembly (PMLN - MNA NA/316)",
+      "Owner & CEO of Hamza Motors - HQ and former Member of Pakistan's National Assembly. Based in Islamabad; born May 2001.",
     images: ["/images/sheikh-hamza-podium.jpg"],
   },
   robots: {
@@ -84,6 +87,9 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  verification: {
+    google: "IThlNkQauHgw3S3rk3ik263ZPoBah7yT2ZPsIpx-Z84",
+  },
 };
 
 // Accurate Schema.org JSON-LD Person Structured Data
@@ -94,13 +100,14 @@ const jsonLd = {
       "@type": "Person",
       "@id": "https://sheikhmohammadhamzakhalifa.online/#person",
       name: "Sheikh Mohammad Hamza Khalifa",
+      description:
+        "Sheikh Mohammad Hamza Khalifa is a Pakistani business executive, Owner and Chief Executive Officer of Hamza Motors - HQ, and former Member of the National Assembly. He is based in Islamabad, Pakistan, and was born in May 2001.",
+      birthDate: "2001-05",
       alternateName: [
         "شیخ محمد حمزہ خلیفہ",
         "Hamza Khalifa",
         "Mohammad Hamza Khalifa",
       ],
-      description:
-        "Pakistani business executive, Owner and Chief Executive Officer of Hamza Motors - HQ, and former Member of the National Assembly representing PMLN from NA-316.",
       url: "https://sheikhmohammadhamzakhalifa.online",
       image: [
         "https://sheikhmohammadhamzakhalifa.online/images/sheikh-hamza-podium.jpg",
@@ -108,7 +115,7 @@ const jsonLd = {
         "https://sheikhmohammadhamzakhalifa.online/images/sheikh-hamza-formal.jpg",
         "https://sheikhmohammadhamzakhalifa.online/images/sheikh-hamza-assembly.jpg",
       ],
-      jobTitle: "Owner & CEO",
+      jobTitle: "Owner and Chief Executive Officer of Hamza Motors - HQ",
       worksFor: {
         "@type": "Organization",
         name: "Hamza Motors - HQ",
@@ -131,7 +138,7 @@ const jsonLd = {
       ],
       homeLocation: {
         "@type": "Place",
-        name: "Karachi, Pakistan",
+        name: "Islamabad, Pakistan",
       },
       birthPlace: {
         "@type": "Place",
@@ -143,7 +150,6 @@ const jsonLd = {
       },
       knowsLanguage: ["Urdu", "English", "Arabic", "Sindhi"],
       sameAs: [
-        "https://instagram.com/sheikhmohammadhamzakhalifa",
         "https://facebook.com/sheikhmohammadhamzakhalifa",
         "https://sheikhmohammadhamzakhalifa.online",
       ],
@@ -153,7 +159,8 @@ const jsonLd = {
       "@id": "https://sheikhmohammadhamzakhalifa.online/#website",
       url: "https://sheikhmohammadhamzakhalifa.online",
       name: "Sheikh Mohammad Hamza Khalifa",
-      description: "Official Profile of Sheikh Mohammad Hamza Khalifa",
+      description:
+        "Official profile of Sheikh Mohammad Hamza Khalifa, Owner and Chief Executive Officer of Hamza Motors - HQ, based in Islamabad, Pakistan.",
       publisher: {
         "@id": "https://sheikhmohammadhamzakhalifa.online/#person",
       },

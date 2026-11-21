@@ -18,7 +18,7 @@ export function PersonalDetailsSection() {
     },
     {
       icon: Calendar,
-      label: "Birthday",
+      label: "Date of birth",
       value: PROFILE_DATA.birthDate,
     },
     {
